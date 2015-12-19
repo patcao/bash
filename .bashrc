@@ -106,4 +106,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export PATH=$PATH:"/cygdrive/C/Program Files/Java/jdk1.7.0_79/bin"
+#export PATH=$PATH:"/cygdrive/C/Program Files/Java/jdk1.7.0_79/bin"
+export VISUAL=vim
+export EDITOR="$VISUAL"
