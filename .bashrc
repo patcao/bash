@@ -117,6 +117,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# source /home/pcao/.nix-profile/etc/profile.d/nix.sh
+
+
 refresh-env() {
   if [ -n "$TMUX" ]; then
     eval $(/usr/bin/tmux showenv -s)
@@ -127,8 +130,8 @@ export PROMPT_COMMAND="refresh-env; history -a; history -c; history -r;"
 
 
 export GIT_PS1_DESCRIBE_STYLE=branch
-export PS1="\[\033[1;34m\]\u@\[\033[1;35m\]\h: \[\033[0;33m\]\w\$(__git_ps1)\n\[\033[0;36m\]\t $ \[\033[0;39m\]"
-
+export PS1="\[\033[1;34m\]\u@\[\033[1;35m\]\h: \[\033[0;33m\]\w\$(__git_ps1) $IN_NIX_SHELL\n\[\033[0;36m\]\t $ \[\033[0;39m\]"
+export NIX_SHELL_PRESERVE_PROMPT='yes'
 
 alias l='ls -l'
 
