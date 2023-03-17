@@ -1,9 +1,6 @@
-alias home='cd d:/home'
-alias codeforces='cd /c/Users/Patrick/Documents/Cornell/Programming/CodeForces'
-alias 3400='cd /c/Users/Patrick/Documents/Cornell/Junior/ECE\ 3400'
-alias cpp='cd /c/Users/Patrick/Documents/Cornell/Programming/C++'
 alias vim='vim -p'
 alias ls='ls --color'
 alias l='ls -l'
-alias totient='ssh pxc2@en-cs-totient-01.coecis.cornell.edu'
-alias g++='g++ -std=c++11'
+
+alias gstat='git status'
+alias gl='git log -n'
